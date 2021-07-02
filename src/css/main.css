@@ -1,0 +1,254 @@
+.webgl {
+  mix-blend-mode: hard-light;
+}
+
+body {
+  background-image: radial-gradient(#1f2841, #030308);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 2vh;
+  width: inherit;
+}
+
+.name {
+  font-size: 3.6em;
+  font-weight: 800;
+  margin: 48vh auto 8vh auto;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.2em;
+  color: lavenderblush;
+  font-family: arial;
+  opacity: 80%;
+}
+
+.about a {
+  margin: 1em;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  opacity: 60%;
+}
+
+.design {
+  color: rgba(190, 130, 238, 0.8);
+}
+
+.design:hover {
+  font-weight: bold;
+  color: #be82ee;
+}
+
+.tech {
+  color: rgba(96, 137, 244, 0.8);
+}
+
+.tech:hover {
+  font-weight: bold;
+  color: #6089f4;
+}
+
+.business {
+  color: rgba(166, 233, 248, 0.8);
+}
+
+.business:hover {
+  font-weight: bold;
+  color: #a6e9f8;
+}
+
+nav {
+  width: 75%;
+  margin: 7.5vh 0;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: inherit;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.primary-nav li a {
+  margin: 1em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  /* CSS Smooth Scroll */
+  overflow: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.designNav {
+  display: none;
+  position: fixed;
+  padding-top: 12vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+}
+
+.designNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.designNav ul li {
+  margin: 0 5%;
+  font-size: 1.6em;
+}
+
+.projectList .projectbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.projectList .projectbox img {
+  max-width: -webkit-fill-available;
+}
+
+.projectList .projectbox .projectBoxText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectList .projectbox .projectName {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+  margin-top: 0.5em;
+}
+
+.projectList .projectbox .projectTime {
+  font-size: 0.8em;
+  color: white;
+  opacity: 0.8;
+  margin-top: 1.5em;
+}
+
+.profile {
+  display: none;
+  color: white;
+}
+
+img.profilePic {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .name {
+    font-size: 4.8em;
+  }
+  .about a {
+    font-size: 1.6em;
+  }
+  .primary-nav li a {
+    font-size: 1.6em;
+  }
+  .projectbox {
+    width: 25%;
+    padding: 3%;
+  }
+  .projectList {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro p {
+    width: 70%;
+  }
+  img.profilePic {
+    display: block;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
