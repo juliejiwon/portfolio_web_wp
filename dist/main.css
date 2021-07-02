@@ -36,7 +36,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -45,12 +44,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  position: absolute;
+  bottom: 2vh;
+  width: inherit;
 }
 
 .name {
   font-size: 3.6em;
   font-weight: 800;
-  margin: 30vh auto 1em auto;
+  margin: 48vh auto 8vh auto;
   text-decoration: none;
   text-align: center;
   width: 100%;
@@ -64,11 +66,40 @@ body {
   margin: 1em;
   text-decoration: none;
   font-size: 1em;
+  color: white;
+  opacity: 60%;
+}
+
+.design {
+  color: rgba(190, 130, 238, 0.8);
+}
+
+.design:hover {
+  font-weight: bold;
+  color: #be82ee;
+}
+
+.tech {
+  color: rgba(96, 137, 244, 0.8);
+}
+
+.tech:hover {
+  font-weight: bold;
+  color: #6089f4;
+}
+
+.business {
+  color: rgba(166, 233, 248, 0.8);
+}
+
+.business:hover {
+  font-weight: bold;
+  color: #a6e9f8;
 }
 
 nav {
-  width: 100%;
-  margin: 1em 0;
+  width: 75%;
+  margin: 7.5vh 0;
 }
 
 .navbar .container {
@@ -90,9 +121,9 @@ nav {
   display: -ms-flexbox;
   display: flex;
   margin: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
 }
 
@@ -121,6 +152,34 @@ section {
   text-align: center;
   position: relative;
   scroll-snap-align: center;
+}
+
+.designNav {
+  display: none;
+  position: fixed;
+  padding-top: 12vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60%;
+}
+
+.designNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.designNav ul li {
+  margin: 0 5%;
+  font-size: 1.6em;
 }
 
 .projectList .projectbox {
@@ -161,7 +220,25 @@ section {
   margin-top: 1.5em;
 }
 
+.profile {
+  display: none;
+  color: white;
+}
+
+img.profilePic {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
+  .name {
+    font-size: 4.8em;
+  }
+  .about a {
+    font-size: 1.6em;
+  }
+  .primary-nav li a {
+    font-size: 1.6em;
+  }
   .projectbox {
     width: 25%;
     padding: 3%;
@@ -172,8 +249,27 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro p {
+    width: 70%;
+  }
+  img.profilePic {
+    display: block;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    width: 1080px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
