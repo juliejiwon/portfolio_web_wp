@@ -11,6 +11,7 @@ import project1 from '/static/images/enlight_1.jpg'
 import loeyb1 from '/static/images/loeyb_1.png'
 import loeyb2 from '/static/images/loeyb_2.png'
 import loeyb3 from '/static/images/loeyb_3.png'
+import diamond1 from '/static/texture/diamond1.jpeg'
 
 $('.design, .tech, .business').on('click', function () {
     gsap.to(sphere.position, {
@@ -41,18 +42,18 @@ $('.about').on('click', function () {
 //loading
 const textureLoader = new THREE.TextureLoader()
 // const texture1 = textureLoader.load('/images/grad_8.png')
-const normalTexture = textureLoader.load('/texture/diamond1.jpeg')
+const normalTexture = textureLoader.load(diamond1)
 loadImage('img.project1', project1)
-loadImage('img.loeyb1',loeyb1)
-loadImage('img.loeyb2',loeyb2)
-loadImage('img.loeyb3',loeyb3)
+loadImage('img.loeyb1', loeyb1)
+loadImage('img.loeyb2', loeyb2)
+loadImage('img.loeyb3', loeyb3)
 
 //color
 const pink1 = new THREE.Color(0xEC82E0)
 const lightblue2 = new THREE.Color(0xF4FAFF);
 
 // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -129,13 +130,13 @@ pointLight4.intensity = 1
 scene.add(pointLight4)
 
 
-gui.add(pointLight2.position, 'x').min(-3).max(3).step(0.01)
-gui.add(pointLight2.position, 'y').min(-3).max(3).step(0.01)
-gui.add(pointLight2.position, 'z').min(-3).max(3).step(0.01)
-// gui.add(pointLight2, 'intensity').max(0).min(10).step(0.1)
+// gui.add(pointLight2.position, 'x').min(-3).max(3).step(0.01)
+// gui.add(pointLight2.position, 'y').min(-3).max(3).step(0.01)
+// gui.add(pointLight2.position, 'z').min(-3).max(3).step(0.01)
+// // gui.add(pointLight2, 'intensity').max(0).min(10).step(0.1)
 
-gui.add(material, 'metalness').min(-1).max(3).step(0.01)
-gui.add(material, 'roughness').min(-1).max(3).step(0.01)
+// gui.add(material, 'metalness').min(-1).max(3).step(0.01)
+// gui.add(material, 'roughness').min(-1).max(3).step(0.01)
 
 /**
  * Sizes

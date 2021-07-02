@@ -9,7 +9,7 @@ module.exports = {
     {
         filename: 'bundle.[contenthash].js',
         path: path.resolve(__dirname, '../dist'),
-        publicPath: "/portfolio_web_wp/"
+        // publicPath: "/portfolio_web_wp/"
     },
     devtool: 'source-map',
     plugins:
@@ -67,7 +67,7 @@ module.exports = {
 
                 // Images
                 {
-                    test: /\.(jpg|png|gif|svg)$/,
+                    test: /\.(JPG|jpeg|jpg|png|gif|svg)$/,
                     use:
                         [
                             {
