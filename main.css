@@ -50,7 +50,7 @@ body {
 }
 
 .name {
-  font-size: 9vh;
+  font-size: 8vh;
   font-weight: 800;
   margin: 48vh auto 8vh auto;
   text-decoration: none;
@@ -65,7 +65,7 @@ body {
 .about a {
   margin: 3vh;
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 2vh;
   color: white;
   opacity: 60%;
 }
@@ -128,9 +128,9 @@ nav {
 }
 
 .primary-nav li a {
-  margin: 3vh;
+  margin: 2vh;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 .box {
