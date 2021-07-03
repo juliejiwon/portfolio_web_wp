@@ -182,7 +182,7 @@ section {
   font-size: 2vh;
 }
 
-.projectList #projectbox {
+.projectList .projectbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,11 +193,11 @@ section {
   height: 100vh;
 }
 
-.projectList #projectbox img {
+.projectList .projectbox img {
   max-width: -webkit-fill-available;
 }
 
-.projectList #projectbox .projectBoxText {
+.projectList .projectbox .projectBoxText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,14 +206,14 @@ section {
           justify-content: space-between;
 }
 
-.projectList #projectbox .projectName {
+.projectList .projectbox .projectName {
   font-size: 3vh;
   font-weight: bold;
   color: white;
   margin-top: 0.5vh;
 }
 
-.projectList #projectbox .projectTime {
+.projectList .projectbox .projectTime {
   font-size: 1.2vh;
   color: white;
   opacity: 0.8;
