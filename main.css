@@ -50,7 +50,7 @@ body {
 }
 
 .name {
-  font-size: 3.6em;
+  font-size: 9vh;
   font-weight: 800;
   margin: 48vh auto 8vh auto;
   text-decoration: none;
@@ -63,9 +63,9 @@ body {
 }
 
 .about a {
-  margin: 1em;
+  margin: 3vh;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 4vh;
   color: white;
   opacity: 60%;
 }
@@ -128,9 +128,9 @@ nav {
 }
 
 .primary-nav li a {
-  margin: 1em;
+  margin: 3vh;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 3vh;
 }
 
 .box {
@@ -179,7 +179,7 @@ section {
 
 .designNav ul li {
   margin: 0 5%;
-  font-size: 1.6em;
+  font-size: 3vh;
 }
 
 .projectList .projectbox {
@@ -207,17 +207,17 @@ section {
 }
 
 .projectList .projectbox .projectName {
-  font-size: 1.3em;
+  font-size: 4vh;
   font-weight: bold;
   color: white;
-  margin-top: 0.5em;
+  margin-top: 2h;
 }
 
 .projectList .projectbox .projectTime {
-  font-size: 0.8em;
+  font-size: 2vh;
   color: white;
   opacity: 0.8;
-  margin-top: 1.5em;
+  margin-top: 6vh;
 }
 
 .profile {
@@ -225,19 +225,29 @@ section {
   color: white;
 }
 
-img.profilePic {
+.profile img.profilePic {
   display: none;
+}
+
+.profile .basicInfo {
+  position: relative;
+  top: 8vh;
+}
+
+.profile .intro {
+  position: relative;
+  top: 36vh;
 }
 
 @media only screen and (min-width: 768px) {
   .name {
-    font-size: 4.8em;
+    font-size: 12vh;
   }
   .about a {
-    font-size: 1.6em;
+    font-size: 4vh;
   }
   .primary-nav li a {
-    font-size: 1.6em;
+    font-size: 4vh;
   }
   .projectbox {
     width: 25%;
@@ -268,7 +278,7 @@ img.profilePic {
 
 @media only screen and (min-width: 1080px) {
   section {
-    width: 1080px;
+    width: 65vw;
     margin: 0 auto;
   }
 }
