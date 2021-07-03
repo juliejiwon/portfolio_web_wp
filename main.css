@@ -220,7 +220,11 @@ section {
   margin-top: 2vh;
 }
 
-.project {
+.project_loeyb {
+  display: none;
+}
+
+.project_luv {
   display: none;
 }
 
@@ -253,7 +257,7 @@ section {
     font-size: 2.5vh;
   }
   .projectbox {
-    width: 25%;
+    width: 28%;
     padding: 3%;
   }
   .projectList {
