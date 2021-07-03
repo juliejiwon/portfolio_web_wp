@@ -45,7 +45,7 @@ body {
           align-items: center;
   margin: 0 auto;
   position: absolute;
-  bottom: 20vh;
+  bottom: 24vh;
   width: inherit;
 }
 
@@ -59,7 +59,7 @@ body {
   letter-spacing: 0.2em;
   color: lavenderblush;
   font-family: arial;
-  opacity: 80%;
+  opacity: 60%;
 }
 
 .about a {
@@ -257,8 +257,8 @@ section {
     font-size: 2.5vh;
   }
   .projectbox {
-    width: 28%;
-    padding: 3%;
+    width: 25%;
+    padding: 1%;
   }
   .projectList {
     width: 80%;
