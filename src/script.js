@@ -35,6 +35,9 @@ $('img.loeyb, #loeyb .projectBoxText, img.luv, #luv .projectBoxText, img.mego, #
         z: 1.6,
         y: 0
     });
+    gsap.to(material1, {
+        opacity: 0.04
+    });
     
 })
 
@@ -48,6 +51,9 @@ $('.about').on('click', function () {
         duration: 1.4,
         z: 1.6,
         y: 0.45
+    });
+    gsap.to(material1, {
+        opacity: 0.03
     });
 })
 
