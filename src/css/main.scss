@@ -199,6 +199,12 @@ video {
   margin: 2vh 0;
   height: -webkit-fill-available;
 }
+.title {
+  color: white;
+  font-weight: 3vh;
+  font-weight: bold;
+  padding-top: 5vh;
+}
 
 .projectText {
   color: white;
@@ -320,6 +326,23 @@ iframe {
   &:hover {
     background-color: #be82ee;
     opacity: 100%;
+  }
+}
+
+.contact {
+  display: flex;
+  .contact-text {
+    color: white;
+    margin-top: 30vh;
+    h2 {
+      font-size: 5vh;
+      margin: 4vh;
+    }
+    p {
+      font-size: 3vh;
+      margin: 1vh;
+      line-height: 5vh;
+    }
   }
 }
 
