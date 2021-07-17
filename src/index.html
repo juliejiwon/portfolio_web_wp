@@ -20,53 +20,26 @@
             <div id='navbar' class="navbar">
                 <a class="name" href="index.html">JIWON YOON</a>
                 <div class=about onclick='viewProfile()'><a href="#profile">About Me</a></div>
-                <!-- <nav>
-                    <ul class="primary-nav">
-                        <li><a class="design">DESIGN</a></li>
-                        <li><a class="tech">TECH</a></li>
-                        <li><a class="business">BUSINESS</a></li>
-                    </ul>
-                </nav> -->
-
-
+                
             </div>
+            <div class="scroll">scroll to see projects</div>
         </section>
-        <div class="designNav">
-            <ul>
-                <li><a class="design">UX</a></li>
-                <li><a class="design">PRODUCT</a></li>
-                <li><a class="design">VISUAL</a></li>
-            </ul>
-        </div>
-        <!-- <div class="techNav">
-            <ul>
-                <li><a class="tech">UX</a></li>
-                <li><a class="tech">PRODUCT</a></li>
-                <li><a class="tech">VISUAL</a></li>
-            </ul>
-        </div>
-        <div class="businessNav">
-            <ul>
-                <li><a class="business">UX</a></li>
-                <li><a class="business">PRODUCT</a></li>
-                <li><a class="business">VISUAL</a></li>
-            </ul>
-        </div> -->
+        
         <div id='projectList' class="projectList">
-            <section class="projectbox" id="enlight">
-                <img src="#" class="enlight">
-                <!-- <div class="overlay"></div> -->
-                <div class="projectBoxText">
-                    <div class="projectName">EN-LIGHT</div>
-                    <div class="projectTime">2017.03 - 2019.12</div>
-                </div>
-            </section>
             <section class="projectbox" id='loeyb'>
                 <img src="#" class="loeyb">
              
                 <div class="projectBoxText">
                     <div class="projectName">loeyB</div>
                     <div class="projectTime">2021.01 - 2021.06</div>
+                </div>
+            </section>
+            <section class="projectbox" id="enlight">
+                <img src="#" class="enlight">
+                <!-- <div class="overlay"></div> -->
+                <div class="projectBoxText">
+                    <div class="projectName">EN-LIGHT</div>
+                    <div class="projectTime">2017.03 - 2019.12</div>
                 </div>
             </section>
             <section class="projectbox" id="plity">
@@ -269,6 +242,13 @@
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTPeF64G4lnOQq5kovHNwhgAOIqTRbHct__zCr3rH5_KI-AQyBnDKdaJUSn9FYIViVG5fgh14drj-1k/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
             </section>
         </div>
+        <div class="ilhwa">
+            <section class="project_ilhwa">
+                <div class="home">HOME</div>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRS5trZE1s7aHjGG0M1zOVRbB476hTOooQ7UzP663WkQxYAfQUuqv9gnf-BEbxe4s3TGuaodk1v8YcK/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            </section>
+        </div>
 
         <section id='profile' class="profile">
             <div class="basicInfo">
@@ -369,6 +349,16 @@
             $('.project_plity').slideDown(2000)
             $('.project').fadeOut(1000)
             $('#projectList').fadeOut(1000)
+            $('.contact').fadeOut(1000)
+            $('.box').scrollTop(0);
+        })
+        $('img.ilhwa, #ilhwa .projectBoxText').on('click', function () {
+            $('#hero').fadeOut(1000)
+            $('#profile').fadeOut(1000)
+            // $('.project_storyfund:first-of-type').slideDown(2000)
+            $('.project_ilhwa').slideDown(2000)
+            $('.project').fadeOut(1000)
+            $('#projectList').fadeOut(1000)
             $('.box').scrollTop(0);
         })
 
@@ -381,6 +371,11 @@
             
 
         })
+        function blink_text() {
+        $('.scroll').fadeOut(2000);
+        $('.scroll').fadeIn(2000);
+        }
+        setInterval(blink_text, 4000);
        
         // $('#projectbox').on('click', function () {
         //     const pages = $(this).attr('projectname')

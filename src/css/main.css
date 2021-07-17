@@ -45,11 +45,6 @@ body {
   mix-blend-mode: color-dodge;
 }
 
-.name:hover {
-  opacity: 75%;
-  letter-spacing: 0.3em;
-}
-
 .about a {
   margin: 2vh;
   text-decoration: none;
@@ -58,7 +53,7 @@ body {
   opacity: 60%;
   padding: 1.6vh 2.5vh;
   background-color: rgba(190, 208, 241, 0.15);
-  border-radius: 3vh;
+  border-radius: 4vh;
 }
 
 .about a:hover {
@@ -66,6 +61,20 @@ body {
   color: #030308;
   background-color: rgba(190, 208, 241, 0.8);
   opacity: 100%;
+}
+
+.scroll {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3vh;
+  bottom: 12vh;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
 }
 
 nav {
@@ -220,7 +229,8 @@ section {
 .project_luv,
 .project_mego,
 .project_storyfund,
-.project_plity {
+.project_plity,
+.project_ilhwa {
   display: none;
 }
 
@@ -241,7 +251,7 @@ video {
   color: white;
   font-weight: 3vh;
   font-weight: bold;
-  margin-top: 5vh;
+  padding-top: 5vh;
 }
 
 .projectText {
@@ -383,18 +393,19 @@ iframe {
 
 .contact .contact-text {
   color: white;
-  margin-top: 30vh;
+  margin-top: 33vh;
 }
 
 .contact .contact-text h2 {
   font-size: 5vh;
-  margin: 4vh;
+  margin: 8vh;
 }
 
 .contact .contact-text p {
   font-size: 3vh;
   margin: 1vh;
   line-height: 5vh;
+  letter-spacing: 0.4vh;
 }
 
 @media only screen and (min-width: 768px) {

@@ -44,10 +44,6 @@ body {
   opacity: 60%;
   font-family: "Raleway", sans-serif;
   mix-blend-mode: color-dodge;
-  &:hover {
-    opacity: 75%;
-    letter-spacing: 0.3em;
-  }
 }
 
 .about a {
@@ -58,13 +54,23 @@ body {
   opacity: 60%;
   padding: 1.6vh 2.5vh;
   background-color: rgba($color: #bed0f1, $alpha: 0.15);
-  border-radius: 3vh;
+  border-radius: 4vh;
   &:hover {
     font-weight: bold;
     color: rgba($color: #030308, $alpha: 1);
     background-color: rgba($color: #bed0f1, $alpha: 0.8);
     opacity: 100%;
   }
+}
+.scroll {
+  color: rgba($color: white, $alpha: 0.5);
+  font-size: 3vh;
+  bottom: 12vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: fit-content;
+  font-weight: 400;
 }
 
 nav {
@@ -185,7 +191,8 @@ section {
 .project_luv,
 .project_mego,
 .project_storyfund,
-.project_plity {
+.project_plity,
+.project_ilhwa {
   display: none;
 }
 img,
@@ -333,15 +340,16 @@ iframe {
   display: flex;
   .contact-text {
     color: white;
-    margin-top: 30vh;
+    margin-top: 33vh;
     h2 {
       font-size: 5vh;
-      margin: 4vh;
+      margin: 8vh;
     }
     p {
       font-size: 3vh;
       margin: 1vh;
       line-height: 5vh;
+      letter-spacing: 0.4vh;
     }
   }
 }
