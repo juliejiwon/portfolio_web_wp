@@ -24,7 +24,7 @@ import diamond1 from '/static/texture/diamond1.jpeg'
 
 import profilePic from '/static/images/profile_pic.jpeg'
 
-$('img.loeyb, #loeyb .projectBoxText, img.luv, #luv .projectBoxText, img.mego, #mego .projectBoxText, img.storyfund, #storyfund .projectBoxText, img.enlight, #enlight .projectBoxText, img.plity, #plity .projectBoxText').on('click', function () {
+$('img.loeyb, #loeyb .projectBoxText, img.luv, #luv .projectBoxText, img.mego, #mego .projectBoxText, img.storyfund, #storyfund .projectBoxText, img.enlight, #enlight .projectBoxText, img.plity, #plity .projectBoxText, img.ilhwa, #ilhwa .projectBoxText').on('click', function () {
     gsap.to(sphere.position, {
         duration: 1.4,
         z: 1.6,
@@ -36,7 +36,7 @@ $('img.loeyb, #loeyb .projectBoxText, img.luv, #luv .projectBoxText, img.mego, #
         y: 0
     });
     gsap.to(material1, {
-        opacity: 0.04
+        opacity: 0.01
     });
     
 })
@@ -53,7 +53,7 @@ $('.about').on('click', function () {
         y: 0.45
     });
     gsap.to(material1, {
-        opacity: 0.03
+        opacity: 0.01
     });
 })
 
